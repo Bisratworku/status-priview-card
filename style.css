@@ -1,2 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+.contaner{
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+main {
+    background-color: hsl(244, 38%, 16%);
+    width: 75%;
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
+}
+.discription {
+    width: 50%;
+    height: 100%;
+    display:block;
+    padding: 30px;
+}
+header {
+    width: 80%;
+    text-align: start;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+}
+header span {
+    color: hsl(277, 64%, 61%);
+}
+.paragraph{
+    height: 33%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter';
+    font-weight: 400;
+    text-align: start;
+}
+.stats{
+    height: 33%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stat-1 {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    text-align: start;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+.small{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+}
+.image{
+    width: 50%;
+    height: 100%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0px;
+}
+.overlay{
+    border-radius: 0 10px 10px 0px;
+    position: absolute;
+    top: 9.5rem;
+    opacity: 60%;
+    background-color: hsl(277, 64%, 61%);
+    width: 32rem;
+    height: 19.2rem;
+}
+@media(max-width:1000px) {
+    main{
+        
+        width: 20rem;
+        height: 32rem;
+        display: block;
+    }
+    .discription {
+        position: relative;
+        top: 50%;
+        
+        height: 50%;
+        width: 100%;
+    }
+    .image img{
+        border-radius: 10px 10px 0 0;
+    }
+    .image{
+        
+        position: relative;
+        top: -50%;
+        width: 100%;
+        height: 50%;
+        
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        height:16rem;
+        width: 19.89rem;
+        border-radius: 10px 10px 0 0;
+    }
+    header{
+        
+        width: 100%;
+        font-size: 13px;
+    }
+    .paragraph {
+        
+        width: 100%;
+        font-size:11px;
+    }
+    .stats{
+        
+        width: 100%;
+    }
+}
+@media(min-width:1000px){
+    main{
+        width: 60rem;
+    }
+    .overlay{
+        position: absolute;
+        top: 9.5rem;
+        height:19.3rem;
+        width: 29.9rem;
+        
+    }
+    .paragraph{
+        text-align: start;
+            width: 90%;
+        
+    }
+    @media(max-width:1300px){
+        
+        .overlay{
+            position: absolute;
+            top: 9rem;
+            height:17.7rem;
+            width: 29.9rem;
+            
+        }
+        .paragraph{
+            text-align: start;
+            width: 90%;
+        }
+    }
+}
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
